@@ -1,60 +1,132 @@
-# Blog CMS avec Symfony 6
+# ContentHub CMS
 
-Application web de type CMS (Content Management System) développée avec Symfony 6 permettant la gestion d’articles, catégories et contenus administrables via une interface moderne.
+Modern CMS and REST API platform built with Symfony 6, EasyAdmin and MySQL.
 
-## Fonctionnalités principales
+## Overview
 
-- Authentification sécurisée des utilisateurs
-- Gestion des rôles et accès administrateur
-- Gestion des articles de blog
-- Gestion des catégories
-- Interface d’administration avec EasyAdmin
-- Upload et gestion des images
-- Système de commentaires
-- Gestion dynamique des contenus
-- Génération de données de test avec DataFixtures
-- Utilisation d’Event Listeners pour certaines opérations applicatives
-- Interface responsive avec Bootstrap 5
+ContentHub CMS is a modern content management system developed with Symfony 6.
+The application allows administrators to manage blog articles, categories, comments, media uploads and API resources through a secure and scalable architecture.
 
-## Technologies utilisées
+This project was developed as part of an advanced backend learning process focused on Symfony ecosystem, REST API development and enterprise web application architecture.
 
-- PHP 8
-- Symfony 6
-- Twig
-- EasyAdmin
-- Bootstrap 5
-- Doctrine ORM
-- MySQL
-- DataFixtures
-- Event Listeners
-- Git & GitHub
+---
 
-## Objectif du projet
+## Main Features
 
-Ce projet personnel m’a permis d’approfondir mes compétences sur Symfony 6, l’architecture MVC, la gestion des entités avec Doctrine, l’administration avec EasyAdmin ainsi que les bonnes pratiques de développement backend.
+### Authentication & Security
 
-## État du projet
+* Secure user authentication
+* Role and permission management
+* Protected administration area
 
-Projet personnel réalisé dans le cadre de l’apprentissage avancé de Symfony et de la conception d’applications web modernes.
+### Content Management
 
+* Create, edit and delete blog articles
+* Category management
+* Dynamic content administration
+* Image upload and media management
 
+### REST API
 
-⚙️ Installation
---------------
-Install the PHP dependencies and JS dependencies.
-```sh
-composer install
+* RESTful API endpoints
+* JSON responses
+* API testing with Postman
+* CRUD operations through API controllers
+
+### Administration
+
+* Modern admin dashboard using EasyAdmin
+* Entity management
+* Optimized backend workflow
+
+### Additional Features
+
+* Comment system
+* Doctrine ORM relationships
+* DataFixtures for test data
+* Event Listeners implementation
+* Responsive UI with Bootstrap 5
+
+---
+
+## Technologies Used
+
+* PHP 8
+* Symfony 6
+* Doctrine ORM
+* MySQL
+* Twig
+* EasyAdmin
+* Bootstrap 5
+* REST API
+* DataFixtures
+* Event Listeners
+* Git & GitHub
+
+---
+
+## Learning Objectives
+
+This project allowed me to strengthen my skills in:
+
+* Symfony architecture
+* MVC design pattern
+* REST API development
+* Doctrine entity relationships
+* Backend administration
+* Secure authentication systems
+* Clean backend development practices
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/wince-webdev/ContentHub-CMS.git
 ```
-```sh
+
+Install dependencies:
+
+```bash
+composer install
 npm install
 ```
-Installing assets
-```sh
-npm run dev
+
+Configure environment variables:
+
+```bash
+cp .env .env.local
 ```
 
+Run database migrations:
 
-## Auteur
+```bash
+php bin/console doctrine:migrations:migrate
+```
 
-**Winceslas ADJIHANOU**  
-Développeur Full Stack PHP/Symfony
+Load fixtures:
+
+```bash
+php bin/console doctrine:fixtures:load
+```
+
+Start the development server:
+
+```bash
+symfony server:start
+```
+
+---
+
+## Project Status
+
+Project completed and continuously improved for backend practice and API architecture learning.
+
+---
+
+## Author
+
+**Winceslas ADJIHANOU**
+Full Stack PHP Developer — Symfony & Laravel
